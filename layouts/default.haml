@@ -19,7 +19,16 @@
             %ul.right
               %li
                 %a{:href => "#"} Contact
-    .row
-      .twelve.columns
-        = yield
+    .large-2.columns
+      .column
+        .large-2.rows
+          Placeholder for image
+        .large-10.rows
+          %ul.side-nav
+            %li
+              %a{:href=>'#'}Home
+            %li
+              %a{:href=>'#'}Other Home
+    .large-10.columns
+      = yield
 
