@@ -1,5 +1,13 @@
 #!/usr/bin/env ruby
 
+require 'compass'
+
+Compass.add_project_configuration 'compass.rb'
+
+compile '/assets/stylesheets/*' do
+  filter :sass, Compass.sass_engine_options.merge(:syntax => item[:extension].to_sym)
+end
+
 compile '/**/*.html' do
   layout '/default.*'
 end
@@ -14,6 +22,19 @@ end
 #end
 
 compile '/**/*' do
+end
+
+route '/assets/images/*' do
+  #ignore images for now
+end
+
+route '/assets/javascripts/*' do
+  #ignore javascripts for now
+end
+
+route '/assets/stylesheets/*' do
+  # flatten assets to assets/ similar to rails
+  '/assets/' + File.basename(item.identifier) + '.css'
 end
 
 route '/**/*.{html,md}' do
