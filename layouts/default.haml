@@ -1,0 +1,25 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %title
+      A Brand new nanoc site -
+      = item[:title]
+    %link{:rel => "stylesheet", :href => "/assets/app.scss.css" }
+  %body
+    .header
+      .contain-to-grid
+        %nav.top-bar
+          %ul
+            %li.name
+              %a{:href => "/"} Home
+            %li.toggle-topbar
+              %a{:href => "#"}
+          %section
+            %ul.right
+              %li
+                %a{:href => "#"} Contact
+    .row
+      .twelve.columns
+        = yield
+

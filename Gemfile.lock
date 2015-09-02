@@ -20,6 +20,8 @@ GEM
     cri (2.7.0)
       colored (~> 1.2)
     ffi (1.9.10)
+    haml (4.0.7)
+      tilt
     kramdown (1.8.0)
     multi_json (1.11.2)
     nanoc (4.0.0rc2)
@@ -29,6 +31,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     sass (3.4.18)
+    tilt (2.0.1)
     zurb-foundation (4.3.2)
       sass (>= 3.2.0)
 
@@ -38,6 +41,7 @@ PLATFORMS
 DEPENDENCIES
   adsf
   compass
+  haml
   kramdown
   nanoc (~> 4.0.0rc2)
   zurb-foundation

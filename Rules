@@ -49,4 +49,4 @@ route '/**/*' do
   item.identifier.to_s
 end
 
-layout '/**/*', :erb
+layout '/**/*', :haml, :format => :html5
