@@ -9,4 +9,6 @@ gem 'zurb-foundation'
 gem 'compass'
 gem 'haml'
 gem 'pry'
+gem 'pygments.rb'
+gem 'nokogiri'
 
