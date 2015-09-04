@@ -19,8 +19,9 @@ module LinkHelpers
   #
   # link an article
   #
-  def link_article name
-    link_to name, "/articles/#{name.downcase.gsub(" ", "_")}"
+  def link_article name, filename = nil
+    path = "/articles/#{filename.nil? ? name.downcase.gsub(" ", "_") : filename}"
+    link_to name, path
   end
 
 end
