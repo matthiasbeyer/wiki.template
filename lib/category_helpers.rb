@@ -76,6 +76,14 @@ module Categories
     end
   end
 
+  def create_categories_pages
+    cont   = '<%= render("/categories.haml") %>'
+    conf   = { categories: all_categories, hide_categories: true }
+    link   = "/categories.html"
+    puts "Creating categories page"
+    @items.create(cont, conf, link)
+  end
+
 end
 
 include Categories
