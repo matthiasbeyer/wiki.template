@@ -1,0 +1,10 @@
+%h1= @item[:title]
+
+%hr
+
+.large-10.columns
+  = yield
+
+.large-2.columns
+  = Wiki::Article.toc
+

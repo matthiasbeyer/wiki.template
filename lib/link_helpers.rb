@@ -16,6 +16,13 @@ module LinkHelpers
     cs.map { |c| "<a href='/categories/#{c}'>#{c}</a>" }
   end
 
+  #
+  # link an article
+  #
+  def link_article name
+    link_to name, "/articles/#{name.downcase.gsub(" ", "_")}"
+  end
+
 end
 
 include LinkHelpers

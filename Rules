@@ -15,6 +15,14 @@ compile '/assets/stylesheets/*' do
   filter :sass, Compass.sass_engine_options.merge(:syntax => item[:extension].to_sym)
 end
 
+compile '/articles/*.haml' do
+  filter :haml
+  filter :erb
+  layout '/article.*'
+  layout '/default.*'
+end
+
+
 compile '/categories/*.html' do
   filter :erb
   layout '/category.*'
