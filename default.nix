@@ -6,6 +6,8 @@ let
   env = with pkgs; [
     bundler
     ruby_2_2_0
+    python34Packages.pygments
+    zlib
   ];
 in
 
