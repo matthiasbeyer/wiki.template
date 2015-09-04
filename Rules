@@ -4,16 +4,31 @@ require 'compass'
 
 Compass.add_project_configuration 'compass.rb'
 
+preprocess do
+  puts "Creating category pages..."
+  create_category_pages
+  create_categories_pages
+  puts "done."
+end
+
 compile '/assets/stylesheets/*' do
   filter :sass, Compass.sass_engine_options.merge(:syntax => item[:extension].to_sym)
 end
 
+compile '/categories/*.html' do
+  filter :erb
+  layout '/category.*'
+  layout '/default.*'
+end
+
 compile '/**/*.html' do
+  filter :erb
   layout '/default.*'
 end
 
 compile '/**/*.haml' do
   filter :haml
+  filter :erb
   layout '/default.*'
 end
 

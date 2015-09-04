@@ -8,4 +8,5 @@ gem 'kramdown'
 gem 'zurb-foundation'
 gem 'compass'
 gem 'haml'
+gem 'pry'
 

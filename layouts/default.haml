@@ -16,7 +16,18 @@
             %li
               %a{:href=>'#'}Home
             %li
-              %a{:href=>'#'}Other Home
+              %a{:href=>'/categories'}Categories
     .large-10.columns
       = yield
+
+    %small.footer
+      .large-2.columns
+        .column
+          %p
+            wiki.template (C) 2015 Matthias Beyer
+      .large-10.columns
+        - unless @item[:hide_categories]
+          %p
+            Categories:
+            = category_links_for_item item
 
