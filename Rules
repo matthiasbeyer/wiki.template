@@ -18,6 +18,11 @@ end
 compile '/articles/*.haml' do
   filter :haml
   filter :erb
+  filter :colorize_syntax, {
+    default_colorizer: :pygmentsrb,
+    encoding: 'utf-8',
+    outside_pre: false,
+  }
   layout '/article.*'
   layout '/default.*'
 end
