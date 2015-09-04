@@ -42,13 +42,6 @@ module Categories
   end
 
   #
-  # get links for the categories
-  #
-  def link_categories cs
-    cs.map { |c| "<a href='/categories/#{c}'>#{c}</a>" }
-  end
-
-  #
   # get the categories of the item
   #
   def categories_for_item i
