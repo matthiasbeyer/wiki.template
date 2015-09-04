@@ -17,6 +17,10 @@ module Wiki
 
     end
 
+    def reset
+      @wiki_sections = []
+    end
+
     def new_section(name, options = { h: 2 })
       @wiki_sections ||= Array.new
       @wiki_sections << Section.new(name)
