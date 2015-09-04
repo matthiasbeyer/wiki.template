@@ -1,0 +1,39 @@
+---
+title: The Wiki
+kind: article
+categories:
+  - about
+  - wiki.template
+---
+
+This page is about this wiki itself.
+
+= Wiki::Article.new_section "What this wiki is"
+
+%p
+  This is a template for a wiki, whereas the content of the template is the
+  documentation on how to use the template. So it is a self-documenting wiki.
+
+= Wiki::Article.new_subsection "Build with nanoc"
+
+%p
+  This site is build with nanoc 4, a static site compiler. I have build this
+  wiki template with it because I wanted to be able to version-controll my wiki
+  content with git, the stupid content tracker. And I wanted to be able to
+  develop a wiki on github.
+
+%p
+  With a static site compiler like nanoc, the content gets compiled into static
+  html files which can then be put on a webserver. No dynamic content means less
+  security issues, less cpu/ram usage on the server and faster delivery of the
+  content.
+
+%p
+  Contributions can be done via git(hub) and are written in (almost) plain text.
+  There is no way yet to write wiki articles in markdown, for example. But this
+  very page is written using haml and some utility helpers I wrote for nanoc, so
+  it is
+  %i
+    almost
+  plain text.
+
