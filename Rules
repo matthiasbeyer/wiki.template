@@ -9,11 +9,13 @@ compile '/assets/stylesheets/*' do
 end
 
 compile '/**/*.html' do
+  filter :erb
   layout '/default.*'
 end
 
 compile '/**/*.haml' do
   filter :haml
+  filter :erb
   layout '/default.*'
 end
 
