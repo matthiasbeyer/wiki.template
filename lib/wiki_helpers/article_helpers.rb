@@ -50,7 +50,7 @@ module Wiki
       sections.map do |sec|
         "<li><a href='index.html##{section_id sec.name}'>#{sec.name}</a></li>" +
         generate_toc_tree(sec)
-      end.join + "</ul>"
+      end.join + "</ul>" if not sections.nil?
     end
 
     def section_id name
