@@ -8,15 +8,14 @@
     %link{:rel => "stylesheet", :href => "/assets/app.scss.css" }
     %link{:rel => "stylesheet", :href => "/assets/custom.scss.css" }
   %body
-    .wiki_sidebar.large-2.columns
-      .column
-        .large-2.rows
+    .wiki_sidebar.large-2.column
+      .columns
+        .large-2.row
           Placeholder for image
-        .large-10.rows
-          %p
-            %a.button{:href=>'/'}Home
-            %a.button{:href=>'/categories'}Categories
-    .large-10.columns
+        .large-10.row
+          = Wiki::Sidebar.link('/', "Home")
+          = Wiki::Sidebar.link('/categories', "Categories")
+    .large-10.column
       = yield
 
     %small.footer
