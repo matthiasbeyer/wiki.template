@@ -77,6 +77,14 @@ module Categories
     @items.create(cont, conf, link)
   end
 
+  def category_page_slices
+    @config[:wiki][:categories][:category_overview_page_columns].to_f
+  end
+
+  def category_overview_page_slices
+    @config[:wiki][:categories][:category_overview_page_columns].to_f
+  end
+
 end
 
 include Categories
