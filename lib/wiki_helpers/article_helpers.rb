@@ -39,6 +39,10 @@ module Wiki
       generate_section_html(name, options)
     end
 
+    def toc_empty?
+      @wiki_sections.empty?
+    end
+
     def toc
       generate_toc_tree @wiki_sections
     end
