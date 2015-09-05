@@ -48,8 +48,8 @@ module Wiki
     def generate_toc_tree(sections)
       "<ul>" +
       sections.map do |sec|
-        "<li><a href='index.html##{section_id sec.name}'>#{sec.name}</a></li>" +
-        generate_toc_tree(sec)
+        "<li><a href='index.html##{section_id sec.name}'>#{sec.name}</a>" +
+        generate_toc_tree(sec) + "</li>"
       end.join + "</ul>" if not sections.nil?
     end
 
