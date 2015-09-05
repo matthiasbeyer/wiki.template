@@ -18,3 +18,7 @@
   @include panel($bg: #F6F6F6);
 }
 
+.wiki_toc {
+  @include panel($bg: #F6F6F6);
+  border-color: scale-color($panel-bg, $lightness: -25%);
+}
