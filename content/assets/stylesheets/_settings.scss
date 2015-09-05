@@ -356,7 +356,7 @@ $default-float: left;
 
 // We use these to build padding for buttons.
 
-// $button-med: em-calc(12);
+$button-med: em-calc(10);
 // $button-tny: em-calc(7);
 // $button-sml: em-calc(9);
 // $button-lrg: em-calc(16);
@@ -364,7 +364,7 @@ $default-float: left;
 // We use this to control the display property.
 
 // $button-display: inline-block;
-// $button-margin-bottom: em-calc(20);
+$button-margin-bottom: em-calc(3);
 
 // We use these to control button text styles.
 
