@@ -2,7 +2,11 @@
 
 %hr
 
-%ul
-  - @item[:posts].each do |post|
-    %li= link_to(post[:title], post)
+- n = (@item[:posts].length / 3.0).ceil
+
+- @item[:posts].each_slice n do |slice|
+  .large-4.columns
+    %ul
+      - slice.each do |post|
+        %li= link_to(post[:title], post)
 
