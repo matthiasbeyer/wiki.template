@@ -16,7 +16,9 @@
           = Wiki::Sidebar.link('/', "Home")
           = Wiki::Sidebar.link('/categories', "Categories")
     .large-10.column
-      = yield
+      .rows
+        .large-12.column
+          = yield
 
     %small.footer
       .large-2.columns
