@@ -1,0 +1,20 @@
+//
+// Custom scss code for your wiki
+//
+
+@import "settings";
+@import "normalize";
+@import "foundation";
+
+.wiki_green {
+  background: green !important;
+}
+
+.wiki_red {
+  background: red !important;
+}
+
+.wiki_sidebar {
+  @include panel($bg: #F6F6F6);
+}
+
