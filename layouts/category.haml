@@ -1,8 +1,0 @@
-%h1= "Posts in category '#{@item[:h1]}'"
-
-%hr
-
-%ul
-  - @item[:posts].each do |post|
-    %li= link_to(post[:title], post)
-
