@@ -1,6 +1,2 @@
 .bundle
-.sass-cache
-crash.log
-output
-tmp
 vendor/bundle
