@@ -112,14 +112,3 @@ keywords: []
 #       source_default:
 #         width: '500'
 
-# Uncomment below to configure social media.
-# social:
-#   facebook:
-#     enabled: true
-#   google:
-#     enabled: true
-#     gcfg:
-#       lang: en-US
-#       parsetags: onload
-#   twitter:
-#     enabled: true
