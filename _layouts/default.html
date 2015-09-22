@@ -13,19 +13,30 @@
 </head>
 
 <body>
-  <header>
-    {{ site.title }}
-  </header>
 
-  <nav>
-    <a href="/">Home</a>
-  </nav>
+  <div class="column">
+    <header class="rows large-1">
+      {{ site.title }}
+    </header>
 
-  {{ content }}
+    <div class="rows large-10">
+      <div class="row">
 
-  <footer>
-    {% include social-buttons.html %}
-  </footer>
+        <nav class="columns large-2">
+          <a href="/">Home</a>
+        </nav>
+
+        <div class="columns large-10">
+          {{ content }}
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="rows large-1">
+      {% include social-buttons.html %}
+    </footer>
+  </div>
 
   <script>
     'use strict';
