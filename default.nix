@@ -6,6 +6,8 @@ let
   env = with pkgs; [
     bundler
     ruby_2_2_0
+    nodePackages.bower
+    imagemagick
   ];
 in
 
