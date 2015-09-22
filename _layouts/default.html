@@ -13,7 +13,19 @@
 </head>
 
 <body>
+  <header>
+    {{ site.title }}
+  </header>
+
+  <nav>
+    <a href="/">Home</a>
+  </nav>
+
   {{ content }}
+
+  <footer>
+    {% include social-buttons.html %}
+  </footer>
 
   <script>
     'use strict';
