@@ -21,3 +21,5 @@ def test_code
 end
 {% endhighlight %}
 
+{% gist razor-x/2f62cff9eaae2fcd8cee tag-gist.rb %}
+
