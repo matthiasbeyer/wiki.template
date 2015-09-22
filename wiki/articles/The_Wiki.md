@@ -15,4 +15,9 @@ This is a placeholder text.
   Do not edit this text.
 {% endwiki_note_alert%}
 
+{% highlight ruby %}
+def test_code
+  puts Q%{Some string}
+end
+{% endhighlight %}
 
