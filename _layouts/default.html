@@ -15,16 +15,53 @@
 <body>
 
   <div class="column">
-    <header class="rows large-1">
-      {{ site.title }}
-    </header>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">{{ site.name }}</a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-dropdown">
+            <a href="#">Help</a>
+            <ul class="dropdown">
+              <li>{% link_article FAQ %}</li>
+              <li>{% link_article Maintainer Contact %}</li>
+              <li>{% link_article License %}</li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="has-dropdown">
+            <a href="#">Navigation</a>
+            <ul class="dropdown">
+              <li>{% link_article The Wiki %}</li>
+              <li>{% link_article Beginners Guide %}</li>
+              <li>{% link_article Installation Guide %}</li>
+              <li>{% link_article Goals Of This Wiki %}</li>
+              <li>{% link_article How To Contribute %}</li>
+              <li>{% link_article Developer Notes %}</li>
+              <li>{% link_article Pull Request Etiquette %}</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+    </nav>
 
     <div class="rows large-10">
       <div class="row">
 
-        <nav class="columns large-2">
+        <div class="columns large-2">
           <a href="/">Home</a>
-        </nav>
+        </div>
 
         <div class="columns large-10">
           {{ content }}
