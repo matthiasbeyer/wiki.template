@@ -10,7 +10,6 @@ highlighter: pygments
 # paginate: 5
 
 exclude:
-  - CHANGELOG.md
   - Gemfile
   - Gemfile.lock
   - Guardfile
