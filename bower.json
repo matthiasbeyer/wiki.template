@@ -1,17 +1,19 @@
 {
-  "name": "jekyll-and-zurb",
-  "version": "2.11.5",
-  "homepage": "https://github.com/razor-x/jekyll-and-zurb",
+  "name": "wiki.template",
+  "version": "0.0.0",
+  "homepage": "https://github.com/matthiasbeyer/wiki.template",
   "authors": [
-    "Evan Sosenko <razorx@evansosenko.com>"
+    "Evan Sosenko <razorx@evansosenko.com>",
+    "Matthias Beyer <mail@beyermatthias.de>"
   ],
-  "description": "Jekyll skeleton built on ZURB Foundation.",
+  "description": "Jekyll/ZURB Foundation skeleton for static-site wiki.",
   "keywords": [
     "zurb",
     "foundation",
-    "jekyll"
+    "jekyll",
+    "wiki"
   ],
-  "license": "MIT",
+  "license": "LGPLv2.1",
   "dependencies": {
     "fastclick": "1.0.6",
     "foundation": "5.5.2",

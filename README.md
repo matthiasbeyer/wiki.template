@@ -6,5 +6,5 @@ MIT licensed.
 
 # License
 
-Not licensed yet.
+LGPLv2.1, for more information see the LICENSE file.
 
