@@ -1,0 +1,20 @@
+---
+layout: body
+---
+
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }}</p>
+  </header>
+
+  {{ content }}
+
+  {% if page.comments and site.disqus %}
+    <aside class="comments">
+      <div id="disqus_thread"></div>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </aside>
+  {% endif %}
+</article>

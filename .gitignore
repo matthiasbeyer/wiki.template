@@ -1,2 +1,8 @@
 .bundle
+.jekyll-assets-cache/
+.sass-cache/
+_site/
+bower_components/
+node_modules/
+npm-debug.log
 vendor/bundle

@@ -1,0 +1,20 @@
+---
+baseurl: null
+host: 0.0.0.0
+
+assets:
+  baseurl: /assets/
+  cachebust: none
+  cache: false
+  gzip: []
+  compress:
+    css: null
+    js: null
+
+cdn_enabled: false
+
+google_analytics: false
+piwik: false
+
+livereload:
+  enable: true

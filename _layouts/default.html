@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% include meta.html %}
+  {% include favicon.html %}
+  <link type="text/plain" rel="author" href="{{ site.baseurl }}/humans.txt" />
+  {% stylesheet app %}
+  {% javascript head %}
+</head>
+
+<body>
+  {{ content }}
+
+{% if site.social.facebook.enabled %}
+  <div id="fb-root"></div>
+{% endif %}
+
+  <script>
+    'use strict';
+
+  {% if site.social.facebook.enabled %}
+    {% asset vendor/social-facebook.js %}
+  {% endif %}
+
+  {% if site.social.google.enabled %}
+    {% asset vendor/social-google.js %}
+  {% endif %}
+
+  {% if site.social.twitter.enabled %}
+    {% asset vendor/social-twitter.js %}
+  {% endif %}
+
+  {% if page.comments and site.disqus %}
+    {% asset vendor/disqus.js %}
+  {% endif %}
+
+  {% if site.google_analytics %}
+    {% asset vendor/google-analytics.js %}
+  {% endif %}
+
+  {% if site.piwik %}
+    {% asset vendor/piwik.js %}
+  {% endif %}
+  </script>
+</body>
+</html>
