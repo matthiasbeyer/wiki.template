@@ -56,46 +56,42 @@ module Jekyll
 
     end
 
-    class NoteBlock < ArticleBlock
+    #
+    # Superclass for generating alert boxes with foundation with a nice liquid
+    # block
+    #
+    class AlertBoxBlock < ArticleBlock
 
-      @block_name = "wiki_note"
-
-      def initialize tag_name, text, tokens
-        super
-        @text = text
+      def open_div classattr
+        "<div data-alert class='alert-box #{classattr}' tabindex='0' aria-live='assertive' role='alertdialog'>"
       end
 
-      def render context
-        <<-EOS
-          <div data-alert
-              class="alert-box secondary"
-              tabindex="0"
-              aria-live="assertive"
-              role="alertdialog">#{@text}</div>}
-        EOS
+      def close_div
+        "</div>"
       end
 
     end
 
-    class WarningBlock < ArticleBlock
+    #
+    # For these words, classes will be generated:
+    #
+    #   <word capitalized>Block
+    #
+    # And blocks will be generated (wiki_note_<word>) which can be used as
+    # liquid blocks then to generate alert box-divs for foundation.
+    #
+    [ "success", "warning", "info", "alert", "secondary" ].each do |str|
+      klass = <<-EOS
+        class #{str.capitalize}Block < AlertBoxBlock
+          @block_name = "wiki_note_#{str}"
 
-      @block_name = "wiki_warning"
+          def render context
+            open_div("#{str}") + super + close_div
+          end
+        end
+      EOS
 
-      def initialize tag_name, text, tokens
-        super
-        @text = text
-      end
-
-      def render context
-        <<-EOS
-          <div data-alert
-              class="alert-box"
-              tabindex="0"
-              aria-live="assertive"
-              role="alertdialog">#{@text}</div>}
-        EOS
-      end
-
+      module_eval klass
     end
 
   end
@@ -110,8 +106,11 @@ end
 end
 
 [
-  Jekyll::Article::NoteBlock,
+  Jekyll::Article::SuccessBlock,
   Jekyll::Article::WarningBlock,
+  Jekyll::Article::InfoBlock,
+  Jekyll::Article::AlertBlock,
+  Jekyll::Article::SecondaryBlock,
 ].each do |klass|
   Liquid::Template.register_tag(klass.block_name, klass)
 end
