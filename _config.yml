@@ -1,8 +1,8 @@
 ---
 # Jekyll options.
-name: Site Name
-domain: https://razor-x.github.io/jekyll-and-zurb
-baseurl: https://razor-x.github.io/jekyll-and-zurb
+name: wiki.template
+domain:
+baseurl:
 markdown: redcarpet
 highlighter: pygments
 
@@ -11,13 +11,14 @@ highlighter: pygments
 
 exclude:
   - CHANGELOG.md
-  - LICENSE.txt
-  - README.md
-  - VERSION
-  - Gemfile.lock
   - Gemfile
+  - Gemfile.lock
   - Guardfile
+  - LICENSE
+  - LICENSE.MIT.txt
+  - README.md
   - Rakefile
+  - VERSION
   - bower.json
   - bower_components
   - node_modules
@@ -33,7 +34,7 @@ gems:
 
 # Jekyll::AssetsPlugin options.
 assets:
-  baseurl: https://razor-x.github.io/jekyll-and-zurb/assets/
+  baseurl:
   sources:
     - _assets/images
     - _assets/javascripts
@@ -54,7 +55,7 @@ cdn:
     - [ "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", "window.jQuery", "jquery/dist/jquery" ]
 
 # Keywords will be merged with categories, tags, and page keywords.
-keywords: [ blog, personal ]
+keywords: []
 
 # Uncomment below to set default meta info.
 # meta:
