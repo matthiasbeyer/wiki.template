@@ -17,3 +17,5 @@ gem 'coffee-script', '~> 2.4.1'
 gem 'mini_magick', '~> 4.2.0'
 
 # Additional Jekyll plugins
+gem 'nokogiri'
+
