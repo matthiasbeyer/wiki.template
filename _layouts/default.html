@@ -15,36 +15,12 @@
 <body>
   {{ content }}
 
-{% if site.social.facebook.enabled %}
-  <div id="fb-root"></div>
-{% endif %}
-
   <script>
     'use strict';
 
-  {% if site.social.facebook.enabled %}
-    {% asset vendor/social-facebook.js %}
-  {% endif %}
-
-  {% if site.social.google.enabled %}
-    {% asset vendor/social-google.js %}
-  {% endif %}
-
-  {% if site.social.twitter.enabled %}
-    {% asset vendor/social-twitter.js %}
-  {% endif %}
-
-  {% if page.comments and site.disqus %}
-    {% asset vendor/disqus.js %}
-  {% endif %}
-
-  {% if site.google_analytics %}
-    {% asset vendor/google-analytics.js %}
-  {% endif %}
-
-  {% if site.piwik %}
-    {% asset vendor/piwik.js %}
-  {% endif %}
+    {% if site.piwik %}
+      {% asset vendor/piwik.js %}
+    {% endif %}
   </script>
 </body>
 </html>
