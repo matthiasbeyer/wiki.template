@@ -14,65 +14,74 @@
 
 <body>
 
-  <div class="column">
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">{{ site.name }}</a></h1>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">{{ site.name }}</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown">
+          <a href="#">Help</a>
+          <ul class="dropdown">
+            <li>{% link_article Frequently Asked Questions %}</li>
+            <li>{% link_article Maintainer contact %}</li>
+            <li>{% link_article License %}</li>
+          </ul>
         </li>
-        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
 
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class="has-dropdown">
-            <a href="#">Help</a>
-            <ul class="dropdown">
-              <li>{% link_article FAQ %}</li>
-              <li>{% link_article Maintainer Contact %}</li>
-              <li>{% link_article License %}</li>
-            </ul>
-          </li>
-        </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="has-dropdown">
+          <a href="#">Navigation</a>
+          <ul class="dropdown">
+            <li>{% link_article The Wiki %}</li>
+            <li>{% link_article Beginners guide %}</li>
+            <li>{% link_article Installation guide %}</li>
+            <li>{% link_article Goals of this Wiki %}</li>
+            <li>{% link_article How to contribute %}</li>
+            <li>{% link_article Developer notes %}</li>
+            <li>{% link_article Pull request etiquette %}</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li class="has-dropdown">
-            <a href="#">Navigation</a>
-            <ul class="dropdown">
-              <li>{% link_article The Wiki %}</li>
-              <li>{% link_article Beginners Guide %}</li>
-              <li>{% link_article Installation Guide %}</li>
-              <li>{% link_article Goals Of This Wiki %}</li>
-              <li>{% link_article How To Contribute %}</li>
-              <li>{% link_article Developer Notes %}</li>
-              <li>{% link_article Pull Request Etiquette %}</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
+  </nav>
 
-    </nav>
-
-    <div class="rows large-10">
-      <div class="row">
-
-        <div class="columns large-2">
-          <a href="/">Home</a>
-        </div>
-
-        <div class="columns large-10">
-          {{ content }}
-        </div>
-
-      </div>
+  <div class="column large-2">
+    <div class="rows large-2">
+      Space for an image
     </div>
 
-    <footer class="rows large-1">
+    <ul class="rows large-10 side-nav" role="navigation" title="Link List">
+      <li role="menuitem"><a href="/">Home</a></li>
+      <li role="menuitem"><a href="#">Link to Your House</a></li>
+      <li role="menuitem"><a href="#">Coffee</a></li>
+      <li role="menuitem"><a href="https://jekyllrb.com">jekyll</a></li>
+    </ul>
+  </div>
+
+  <div class="column large-10">
+    {{ content }}
+  </div>
+
+
+  <div id="footer">
+    <div class="columns large-3">
+      <small>(C) 2015 Matthias Beyer</small>
+    </div>
+
+    <div class="columns large-9">
       {% include social-buttons.html %}
-    </footer>
+    </div>
+
   </div>
 
   <script>
