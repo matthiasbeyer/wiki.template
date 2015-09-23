@@ -8,6 +8,8 @@ let
     ruby_2_2_0
     nodePackages.bower
     imagemagick
+    python
+    pythonPackages.pygments
   ];
 in
 
