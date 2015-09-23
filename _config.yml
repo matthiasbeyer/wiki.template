@@ -108,3 +108,6 @@ meta:
 #       source_default:
 #         width: '500'
 
+toc-gen:
+    include-tocnumber: false
+
