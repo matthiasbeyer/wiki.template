@@ -39,7 +39,7 @@ have in your wiki go to `./wiki/articles` and
 [its subdirectories](/wiki/articles/sub/Subpage.html).
 They _have_ to have the yml header:
 
-```
+```markdown
 ---
 layout: article
 title: <title>
@@ -100,7 +100,7 @@ There are several kinds of alerts available:
 
 Each has a different color scheme. The markup to include them is simple:
 
-```
+```ruby
   {{ "{% wiki_note_<kind> " }}%}
     <your text>
   {{ "{% endwiki_note_secondary " }}%}
