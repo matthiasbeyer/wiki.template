@@ -74,6 +74,12 @@ different color schemes, which
 [you can choose from](https://highlightjs.org/static/demo/) and
 [use in this wiki](/wiki/articles/Installation_guide.html#Modifying)
 
+{% wiki_note_info %}
+  Note that you have to set the language when highlighing code with the
+  three-backticks-syntax. Highlighting does not work if there is no language
+  specified.
+{% endwiki_note_info %}
+
 ## Alerts
 
 There are several kinds of alerts available:
