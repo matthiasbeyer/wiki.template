@@ -35,8 +35,9 @@ and view the site with `bundler exec jekyll s` (the site will be available at
 # Modifying
 
 You can now start modifying the site to your needs. All articles you want to
-have in your wiki go to `./wiki/articles` and its subdirectories. They _have_
-to have the yml header:
+have in your wiki go to `./wiki/articles` and
+[its subdirectories](/wiki/articles/sub/Subpage.html).
+They _have_ to have the yml header:
 
 ```
 ---
