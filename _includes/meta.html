@@ -61,16 +61,3 @@
   <meta property="og:type" content="{{ page.meta.type }}" />
 {% endif %}
 
-{% if page.meta.twitter.card %}
-  <meta name="twitter:card" content="{{ page.meta.twitter.card }}" />
-{% elsif site.meta.twitter.default_card %}
-  <meta name="twitter:card" content="{{ site.meta.twitter.default_card }}" />
-{% endif %}
-
-{% if site.meta.twitter.site %}
-  <meta name="twitter:site" content="{{ site.meta.twitter.site }}" />
-{% endif %}
-
-{% if site.meta.twitter.creator or page.meta.twitter.creator %}
-  <meta name="twitter:creator" content="{% if page.meta.twitter.creator %}{{ page.meta.twitter.creator }}{% else %}{{ site.meta.twitter.creator }}{% endif %}" />
-{% endif %}

@@ -6,7 +6,6 @@ assets:
   baseurl: /assets/
   gzip: []
 
-google_analytics: false
 piwik: false
 
 livereload:

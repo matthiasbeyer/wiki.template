@@ -13,7 +13,6 @@ assets:
 
 cdn_enabled: false
 
-google_analytics: false
 piwik: false
 
 livereload:
