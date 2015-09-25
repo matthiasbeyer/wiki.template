@@ -4,6 +4,7 @@
 
 let
   env = with pkgs; [
+    git # for fetching gems with git
     bundler
     ruby_2_2_0
     nodePackages.bower
