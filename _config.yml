@@ -30,6 +30,7 @@ gems:
   - json
   - jekyll-assets
   - coffee_script
+  - jekyll-toc-generator
 
 # Jekyll::AssetsPlugin options.
 assets:
