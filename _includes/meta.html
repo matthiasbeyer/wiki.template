@@ -3,6 +3,8 @@
 {% if page.title %}
   <title>{{ site.meta.title.prefix }}{{ page.title }}{{ site.meta.title.suffix }}</title>
   <meta property="og:title" content="{{ page.title }}" />
+{% else %}
+  <title>{{ site.meta.title.prefix }}{{ site.meta.title.suffix }}</title>
 {% endif %}
 
 {% if page.meta.description %}
