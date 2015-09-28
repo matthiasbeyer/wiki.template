@@ -57,12 +57,12 @@ cdn:
 keywords: []
 
 # Uncomment below to set default meta info.
-# meta:
-#   locale: en_US
-#   description: "My Site's default description."
-#   title:
-#     prefix: ""
-#     suffix: " - Site Name"
+meta:
+  locale: en_US
+  description: "static site compiler wiki template"
+  title:
+    prefix: "wiki."
+    suffix: ".template"
 
 # Uncomment below and add your Piwik URL to enable Piwik.
 # piwik: https://example.com/piwik/
