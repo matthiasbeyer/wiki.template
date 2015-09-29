@@ -1,12 +1,19 @@
 # wiki.template
 
-A wiki template build with the awesome nanoc static site compiler and the
-awesome foundation css framework.
+This is a template for a wiki based on jekyll, foundation. It is based on
+[jekyll-and-zurb](https://github.com/razor-x/jekyll-and-zurb), which is
+MIT licensed.
 
-## License
+# License
 
-All parts which are not distributed with either foundation
-(foundation.zurb.com) or nanoc (nanoc.ws) are published under the terms of the
-GPLv2. Code from foundation or nanoc remain under their respective licenses.
-See the `LICENSE` file for the text of the GPLv2 license.
+The source code used in this project is licensed under the terms of LGPLv2.1,
+for more information see the LICENSE file.
+
+The content of the ./wiki subdirectory (the content of the wiki) is licensed
+under the terms of
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+if not stated otherwise in the respective files.
+
+For more information about
+[CC-by-nc-sa 4.0 click here](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 

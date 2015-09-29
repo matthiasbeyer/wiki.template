@@ -6,6 +6,10 @@ let
   env = with pkgs; [
     bundler
     ruby_2_2_0
+    nodePackages.bower
+    imagemagick
+    python
+    pythonPackages.pygments
   ];
 in
 

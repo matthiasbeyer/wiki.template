@@ -1,0 +1,132 @@
+---
+layout: navpage
+title: wiki.template landing page
+---
+
+<h1>wiki.template</h1>
+
+<p>
+  This is a wiki template. The main point of this is to integrate the foundation
+  css framework with nanoc and preparing everything to be wiki-ish, so one can
+  use this as a start for creating a wiki without having to deal with
+  stylesheets and everything.
+</p>
+
+<p>
+  After the main things are done (the layout), integration for code listings and
+  latex-like formula integration will be included, but for the first step the
+  goal is to serve a starting point for creating a wiki with Markdown.
+</p>
+
+<p>
+  Maybe other markup languages will be included later on.
+</p>
+
+<hr />
+
+<div class="large-block-grid-3">
+  <li>
+    <div class="panel">
+      <p>
+        {% link_article The Wiki %}
+        <br />
+        <small>
+          About this template
+        </small>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="panel">
+      <p>
+        {% link_article Frequently Asked Questions %}
+        <br />
+        <small>
+          The FAQs
+        </small>
+      </p>
+
+      <p>
+        {% link_article How to contribute %}
+        <br />
+        <small>
+          How to contribute to this template
+        </small>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="panel">
+      <p>
+        {% link_article Beginners guide %}
+        <br />
+        <small>
+          How to get this running
+        </small>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="panel">
+      <p>
+        {% link_article Installation guide %}
+        <br />
+        <small>
+          Full installation guide
+        </small>
+      </p>
+
+      <p>
+        {% link_article Goals of this Wiki %}
+        <br />
+        <small>
+          Why am I writing this thing?
+        </small>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="panel">
+      <p>
+        {% link_article Developer notes %}
+        <br />
+        <small>
+          How to work with this piece of software
+        </small>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="panel">
+      <p>
+        {% link_article License %}
+        <br />
+        <small>
+          LGPLv2 and additional notes
+        </small>
+      </p>
+
+      <p>
+        {% link_article Pull request etiquette %}
+        <br />
+        <small>
+          How to submit pull requests on github for this thing
+        </small>
+      </p>
+
+      <p>
+        {% link_article Maintainer contact %}
+        <br />
+        <small>
+          How to get in touch with me
+        </small>
+      </p>
+    </div>
+  </li>
+</div>
+

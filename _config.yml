@@ -1,0 +1,109 @@
+---
+# Jekyll options.
+name: wiki.template
+domain:
+baseurl:
+markdown: redcarpet
+highlighter: pygments
+
+# Uncomment below to enable pagination.
+# paginate: 5
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Guardfile
+  - LICENSE
+  - LICENSE.MIT.txt
+  - README.md
+  - Rakefile
+  - VERSION
+  - bower.json
+  - bower_components
+  - node_modules
+  - vendor
+
+livereload:
+  port: 35729
+
+gems:
+  - json
+  - jekyll-assets
+  - coffee_script
+
+# Jekyll::AssetsPlugin options.
+assets:
+  baseurl:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - bower_components
+  compress:
+    css: sass
+    js: uglifier
+  autosize: true
+
+# Use a CDN to load some libraries.
+# Libraries are loaded first, asynchronously,
+# and should not depend on each other.
+cdn_enabled: true
+cdn:
+  # [ url, loaded check, local asset fallback path ]
+  libs:
+    - [ "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", "window.jQuery", "jquery/dist/jquery" ]
+
+# Keywords will be merged with categories, tags, and page keywords.
+keywords: []
+
+# Uncomment below to set default meta info.
+meta:
+  locale: en_US
+  description: "static site compiler wiki template"
+  title:
+    prefix: "wiki."
+    suffix: ".template"
+
+# Uncomment below and add your Piwik URL to enable Piwik.
+# piwik: https://example.com/piwik/
+
+# Uncomment below to enable deploy.
+# deploy:
+#   # only :rsync supported
+#   protocol: :rsync
+#   # domain name
+#   server: example.com
+#   # remote username
+#   user: www
+#   # remote port
+#   port: 22
+#   # path to remote folder where contents of _site should go
+#   # must have trailing slash
+#   path: /var/www/example.com/htdocs/
+#   # site files and folders that should be uploaded but not synced
+#   # remote content will not be removed from these files and folders
+#   upload_only:
+#     - content/
+
+# Foundation Interchange markup support added to
+# Jekyll Picture Tag (https://github.com/robwierzbowski/jekyll-picture-tag)
+# Uncomment below to enable responsive images.
+# picture:
+#   markup: 'interchange'
+#   source: pictures/fullsize
+#   output: pictures
+#   presets:
+#     default:
+#       ppi: [ 1, 1.5, 2 ]
+#       source_large:
+#         media: '(large)'
+#         width: '1440'
+#       source_medium:
+#         media: '(medium)'
+#         width: '1280'
+#       source_small:
+#         media: '(small)'
+#         width: '768'
+#       source_default:
+#         width: '500'
+
