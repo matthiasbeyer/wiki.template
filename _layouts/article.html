@@ -45,6 +45,28 @@ layout: body
         </tbody>
       </table>
 
+      <table>
+        <thead>
+          <tr>
+            <th>Hash</th>
+            <th>Time</th>
+            <th>Name</th>
+            <th>Mail</th>
+            <th>Subject</th>
+          <tr>
+        </thead>
+
+        <tbody>
+          {% for commit in page.git.commits %}
+            <tr>
+              {% for field in commit %}
+                <td>{{ field }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
     </div>
   </li>
 </ul>
