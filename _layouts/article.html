@@ -2,6 +2,54 @@
 layout: body
 ---
 
+<ul class="accordion" data-accordion>
+  <li class="accordion-navigation">
+    <a href="#panel1a">Page History, Meta information</a>
+    <div id="panel1a" class="content">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Page Commits</th>
+            <th>Page Additions</th>
+            <th>Page Deletions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>{{ page.git.total_commits }}</td>
+            <td>{{ page.git.total_additions }}</td>
+            <td>{{ page.git.total_subtractions }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Commits</th>
+          <tr>
+        </thead>
+
+        <tbody>
+          {% for author in page.git.authors %}
+            <tr>
+              <td>{{ author["name"] }}</td>
+              <td>{{ author["email"] }}</td>
+              <td>{{ author["commits"] }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+    </div>
+  </li>
+</ul>
+
+
 <div id="article_content">
   {{ content | toc_generate }}
 </div>
