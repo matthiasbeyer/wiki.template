@@ -30,6 +30,7 @@ gems:
   - json
   - jekyll-assets
   - coffee_script
+  - jekyll-toc-generator
 
 # Jekyll::AssetsPlugin options.
 assets:
@@ -106,4 +107,7 @@ meta:
 #         width: '768'
 #       source_default:
 #         width: '500'
+
+toc-gen:
+    include-tocnumber: false
 
