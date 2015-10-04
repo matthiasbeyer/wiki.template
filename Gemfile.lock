@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/wiki-template/jekyll-toc-generator
+  revision: f3d21ed1ff375adbafaca8a812b730fd40c36b00
+  specs:
+    jekyll-toc-generator (0.0.1)
+      jekyll (~> 2.0)
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -140,6 +148,7 @@ DEPENDENCIES
   guard-livereload (~> 2.4.0)
   jekyll (~> 2.5.2)
   jekyll-assets (~> 1.0.0)
+  jekyll-toc-generator!
   mini_magick (~> 4.2.0)
   nokogiri
   rake (~> 10.4.2)
