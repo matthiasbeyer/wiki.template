@@ -18,7 +18,7 @@ gem 'mini_magick', '~> 4.2.0'
 
 # Additional Jekyll plugins
 gem 'nokogiri'
-gem 'jekyll-git_metadata'
+gem 'jekyll-git_metadata', git: 'https://github.com/wiki-template/jekyll-git_metadata'
 
 gem 'jekyll-toc-generator', git: 'https://github.com/wiki-template/jekyll-toc-generator.git'
 
