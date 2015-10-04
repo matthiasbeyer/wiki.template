@@ -1,23 +1,23 @@
 GIT
-  remote: https://github.com/wiki-template/jekyll-toc-generator
-  revision: f3d21ed1ff375adbafaca8a812b730fd40c36b00
-  specs:
-    jekyll-toc-generator (0.0.1)
-      jekyll (~> 2.0)
-      nokogiri
   remote: https://github.com/wiki-template/jekyll-git_metadata
   revision: 85e2069e057f19cea0850d602d076ed7eaa0b581
   specs:
     jekyll-git_metadata (0.0.3)
       jekyll (~> 2.0)
 
+GIT
+  remote: https://github.com/wiki-template/jekyll-toc-generator.git
+  revision: f3d21ed1ff375adbafaca8a812b730fd40c36b00
+  specs:
+    jekyll-toc-generator (0.0.1)
+      jekyll (~> 2.0)
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.8)
     blankslate (2.1.2.4)
-    celluloid (0.16.0)
-      timers (~> 4.0.0)
     classifier-reborn (2.0.3)
       fast-stemmer (~> 1.0)
     coderay (1.1.0)
@@ -50,7 +50,6 @@ GEM
       guard (~> 2.8)
       multi_json (~> 1.8)
     hike (1.2.3)
-    hitimes (1.2.3)
     http_parser.rb (0.6.0)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
@@ -81,13 +80,12 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
-    jekyll-watch (1.2.1)
-      listen (~> 2.7)
+    jekyll-watch (1.3.0)
+      listen (~> 3.0)
     json (1.8.3)
-    kramdown (1.8.0)
+    kramdown (1.9.0)
     liquid (2.6.3)
-    listen (2.10.1)
-      celluloid (~> 0.16.0)
+    listen (3.0.3)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     lumberjack (1.0.9)
@@ -105,7 +103,7 @@ GEM
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
-    pry (0.10.1)
+    pry (0.10.2)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -119,7 +117,7 @@ GEM
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    redcarpet (3.3.2)
+    redcarpet (3.3.3)
     safe_yaml (1.0.4)
     sass (3.4.18)
     shellany (0.0.1)
@@ -136,8 +134,6 @@ GEM
       tilt (~> 1.1)
     thor (0.19.1)
     tilt (1.4.1)
-    timers (4.0.4)
-      hitimes
     toml (0.1.2)
       parslet (~> 1.5.0)
     uglifier (2.7.2)
@@ -153,8 +149,8 @@ DEPENDENCIES
   guard-livereload (~> 2.4.0)
   jekyll (~> 2.5.2)
   jekyll-assets (~> 1.0.0)
-  jekyll-toc-generator!
   jekyll-git_metadata!
+  jekyll-toc-generator!
   mini_magick (~> 4.2.0)
   nokogiri
   rake (~> 10.4.2)
